@@ -1,0 +1,90 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(228, 239, 202);
+}
+
+.container{
+    height: 550px;
+    width: 400px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    padding: 30px;
+    overflow-y: auto;
+    margin: 0 1.7rem;
+    background-color: white;
+    padding-top: 2rem;
+}
+h1{
+    text-align: center;
+}
+.top{
+    display: flex;
+    gap: 5px;
+}
+
+#input{
+    height: 50px;
+    width: 76%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(198, 206, 208,.6);
+    padding: 0 10px;
+    margin: 15px 0;
+    font-size: 1rem;
+}
+button{
+    width: 5rem;
+    height: 3rem;
+    border: none;
+    padding:.9rem 1rem;
+    background-color: rgb(51, 152, 235);
+    position: relative;
+    font-size: 1.2rem;
+    top: 1rem;
+    border-radius: 6px;
+    color: white;
+}
+
+button:hover{
+    transform: scale(.96);
+}
+
+ul li{
+    background: rgb(202, 231, 237);
+    color: #333;
+    height: 40px;
+    border-radius: 5px;
+    margin: 10px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding: .6rem 2rem;
+}
+
+ul .fa-check, .fa-trash{
+    position: absolute;
+    cursor: pointer;
+}
+
+ul .fa-check{
+    right: 40px;
+    color: rgb(43, 164, 51);
+}
+
+ul .fa-trash{
+    right: 15px;
+    color: rgb(242, 71, 14);
+}
+
+ul .checked{
+    background: rgb(215, 245, 237);
+    color: rgb(128, 129, 132);
+    text-decoration: line-through;
+    transition: .2s;
+}
